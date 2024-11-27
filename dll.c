@@ -281,3 +281,108 @@ void display(){
     }
 }
 */
+int output(){return 0;}
+/*
+Menu
+1.CreateDLL
+2.InsertFront
+3.InsertEnd
+4.DeleteFront
+5.DeleteEnd
+6.Display
+7.Exit
+Enter your choice: 1
+Enter no of emp details: 2
+Enter details of emp 1:Enter eid,name,salary: 101 asdf 10000
+Enter details of emp 2:Enter eid,name,salary: 102 qwerty 20000
+Employee Details:
+EID     NAME    Salary
+101     asdf    10000.00
+102     qwerty  20000.00
+Total no of employees are 2
+Menu
+1.CreateDLL
+2.InsertFront
+3.InsertEnd
+4.DeleteFront
+5.DeleteEnd
+6.Display
+7.Exit
+Enter your choice: 2
+Enter eid,name,salary: 100 zxcvb 5000
+Employee Details:
+EID     NAME    Salary
+100     zxcvb   5000.00
+101     asdf    10000.00
+102     qwerty  20000.00
+Total no of employees are 3
+Menu
+1.CreateDLL
+2.InsertFront
+3.InsertEnd
+4.DeleteFront
+5.DeleteEnd
+6.Display
+7.Exit
+Enter your choice: 3
+Enter eid,name,salary: 103 jkl 6000
+Employee Details:
+EID     NAME    Salary
+100     zxcvb   5000.00
+101     asdf    10000.00
+102     qwerty  20000.00
+103     jkl     6000.00
+Total no of employees are 4
+Menu
+1.CreateDLL
+2.InsertFront
+3.InsertEnd
+4.DeleteFront
+5.DeleteEnd
+6.Display
+7.Exit
+Enter your choice: 4
+Employee Details:
+EID     NAME    Salary
+101     asdf    10000.00
+102     qwerty  20000.00
+103     jkl     6000.00
+Total no of employees are 3
+Menu
+1.CreateDLL
+2.InsertFront
+3.InsertEnd
+4.DeleteFront
+5.DeleteEnd
+6.Display
+7.Exit
+Enter your choice: 5
+Employee Details:
+EID     NAME    Salary
+101     asdf    10000.00
+102     qwerty  20000.00
+Total no of employees are 2
+Menu
+1.CreateDLL
+2.InsertFront
+3.InsertEnd
+4.DeleteFront
+5.DeleteEnd
+6.Display
+7.Exit
+Enter your choice: 6
+Employee Details:
+EID     NAME    Salary
+101     asdf    10000.00
+102     qwerty  20000.00
+Total no of employees are 2
+Menu
+1.CreateDLL
+2.InsertFront
+3.InsertEnd
+4.DeleteFront
+5.DeleteEnd
+6.Display
+7.Exit
+Enter your choice: 7
+*/
