@@ -136,3 +136,148 @@ void deleteend(){
         count--;
     }
 }
+/*
+#include<stdio.h>
+#include<stdlib.h>
+#include<malloc.h>
+struct node{
+    struct node *llink;
+    int eid;
+    char ename[20];
+    float salary;
+    struct node *rlink;
+};
+typedef struct node *NODE;
+NODE first=NULL;
+int c=0;
+NODE createnode();
+void createdll();
+void insertfront();
+void insertend();
+void deletefront();
+void deleteend();
+void display();
+int main(){
+    int ch;
+    while(1){
+        printf("Menu\n1.CreateDLL\n2.InsertFront\n3.InsertEnd\n4.DeleteFront\n5.DeleteEnd\n6.Display\n7.Exit\nEnter your choice: ");
+        scanf("%d",&ch);
+        switch(ch){
+            case 1:
+                createdll();
+                break;
+            case 2:
+                insertfront();
+                break;
+            case 3:
+                insertend();
+                break;
+            case 4:
+                deletefront();
+                break;
+            case 5:
+                deleteend();
+                break;
+            case 6:
+                display();
+                break;
+            case 7:
+                exit(0);
+        }
+    }
+    return 0;
+}
+NODE createnode(){
+    NODE temp=malloc(sizeof(struct node));
+    temp->rlink=NULL;
+    temp->llink=NULL;
+    c++;
+    printf("Enter eid,name,salary: ");
+    scanf("%d %s %f",&temp->eid,temp->ename,&temp->salary);
+    return temp;
+}
+void createdll(){
+    int n,i;
+    NODE temp,cur;
+    printf("Enter no of emp details: ");
+    scanf("%d",&n);
+    for(i=0;i<n;i++){
+        cur=first;
+        printf("Enter details of emp %d:",i+1);
+        temp=createnode();
+        if(first==NULL){
+            first=temp;
+        }else{
+            while(cur->rlink!=NULL){
+                cur=cur->rlink;
+            }
+            temp->llink=cur;
+            cur->rlink=temp;
+        }
+    }
+    display();
+}
+void insertfront(){
+    NODE temp=createnode();
+    if(first==NULL){
+        first=temp;
+    }else{
+        first->llink=temp;
+        temp->rlink=first;
+        first=temp;
+    }
+    display();
+}
+void insertend(){
+    NODE cur=first,temp=createnode();
+    if(first==NULL){
+        first=temp;
+    }else{
+        while(cur->rlink!=NULL){
+            cur=cur->rlink;
+        }
+        temp->llink=cur;
+        cur->rlink=temp;
+    }
+    display();
+}
+void deletefront(){
+    if(first==NULL){
+        printf("DLL is Empty\n");
+    }else{
+        first->rlink->llink=NULL;
+        first=first->rlink;
+        c--;
+    }
+    display();
+}
+void deleteend(){
+    NODE cur=first;
+    if(first==NULL){
+        printf("DLL is Empty\n");
+    }else if(first->rlink==NULL){
+        first=NULL;
+        c--;
+    }else{
+        while(cur->rlink->rlink!=NULL){
+            cur=cur->rlink;
+        }
+        cur->rlink=NULL;
+        c--;
+    }
+    display();
+}
+void display(){
+    NODE temp=first;
+    if(first==NULL){
+        printf("DLL is Empty\n");
+    }else{
+        printf("Employee Details:\nEID\tNAME\tSalary\n");
+        while(temp!=NULL){
+            printf("%d\t%s\t%.2f\n",temp->eid,temp->ename,temp->salary);
+            temp=temp->rlink;
+        }
+        printf("Total no of employees are %d\n",c);
+    }
+}
+*/
